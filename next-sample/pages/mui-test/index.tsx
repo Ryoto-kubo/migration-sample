@@ -13,9 +13,14 @@ export default function MuiTest() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
+        {/* using module scss */}
         <Button variant='contained' className={styles.redButton}>
           button
         </Button>
+
+        <Button variant='contained'>red button</Button>
+
+        {/* usding emotion */}
       </main>
     </>
   )
