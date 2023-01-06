@@ -15,6 +15,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+      <a
+        href="/nuxt/"
+        className={styles.card}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h2 className={inter.className}>
+          Nuxt
+        </h2>
+      </a>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
