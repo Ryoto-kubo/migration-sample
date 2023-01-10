@@ -2,6 +2,11 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import { Button } from '@mui/material'
 import styles from './button.module.scss'
+import { css } from '@mui/styled-engine'
+
+const BgRedColor = css({
+  backgroundColor: 'red',
+})
 
 export default function MuiTest() {
   return (
@@ -18,9 +23,13 @@ export default function MuiTest() {
           button
         </Button>
 
+        {/* using global style */}
         <Button variant='contained'>red button</Button>
 
-        {/* usding emotion */}
+        {/* using emotion */}
+        <Button variant='contained' css={BgRedColor}>
+          red button
+        </Button>
       </main>
     </>
   )
